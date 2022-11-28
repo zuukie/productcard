@@ -1,0 +1,84 @@
+@use "./colors" as c;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 14px;
+    height: 100vh;
+    background-color: c.$cream;
+    font-family: "Montserrat", sans-serif;
+}
+
+.card {
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    height: 450px;
+    width: 300px;
+    padding: 25px;
+	background-color: c.$white;
+
+    h1 {
+        font-size: 35px;
+        font-family: "Fraunces", serif;
+    }
+    h2 {
+        color: c.$darkgray;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 4px;
+        font-weight: normal;
+    }
+    p {
+        color: c.$darkgray;
+    }
+    .price {
+        display: flex;
+        align-items: center;
+        h3 {
+            font-size: 35px;
+            color: c.$darkcyan;
+            margin-right: 20px;
+            font-family: "Fraunces", serif;
+        }
+        h4 {
+            color: c.$darkgray;
+            text-decoration: line-through;
+        }
+    }
+
+    button {
+        i {
+            margin-right: 8px;
+        }
+        padding: 16px;
+        color: c.$white;
+        font-weight: bold;
+        font-size: 16px;
+        background: none;
+        background-color: c.$darkcyan;
+        border: none;
+        border-radius: 10px;
+    }
+    button:hover {
+        background-color: c.$darkercyan;
+        cursor: pointer;
+    }
+}
+
+img {
+    width: 300px;
+}
