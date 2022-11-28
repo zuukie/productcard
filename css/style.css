@@ -24,14 +24,14 @@ body {
 .text {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   height: 450px;
   width: 300px;
-  padding: 25px;
+  padding: 28px;
   background-color: hsl(0deg, 0%, 100%);
 }
 .text h1 {
-  font-size: 35px;
+  font-size: 34px;
   font-family: "Fraunces", serif;
 }
 .text h2 {
@@ -49,7 +49,7 @@ body {
   align-items: center;
 }
 .text .price h3 {
-  font-size: 35px;
+  font-size: 34px;
   color: hsl(158deg, 36%, 37%);
   margin-right: 20px;
   font-family: "Fraunces", serif;
@@ -57,12 +57,12 @@ body {
 .text .price h4 {
   color: hsl(228deg, 12%, 48%);
   text-decoration: line-through;
+  font-weight: normal;
 }
 .text button {
-  padding: 16px;
+  padding: 14px;
   color: hsl(0deg, 0%, 100%);
   font-weight: bold;
-  font-size: 16px;
   background: none;
   background-color: hsl(158deg, 36%, 37%);
   border: none;
