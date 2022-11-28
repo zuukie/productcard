@@ -18,7 +18,7 @@ body {
 
 .card {
 	display: flex;
-    flex-direction: column;
+	flex-direction: column;
 	border-radius: 10px;
 	overflow: hidden;
 }
@@ -29,12 +29,12 @@ body {
 	justify-content: space-between;
 	height: 450px;
 	width: 300px;
-	padding: 28px;
+	padding: 35px;
 	background-color: c.$white;
-
 	h1 {
 		font-size: 34px;
 		font-family: "Fraunces", serif;
+		line-height: 35px;
 	}
 	h2 {
 		color: c.$darkgray;
@@ -66,7 +66,7 @@ body {
 		i {
 			margin-right: 8px;
 		}
-		padding: 14px;
+		padding: 16px;
 		color: c.$white;
 		font-weight: bold;
 		background: none;
@@ -82,17 +82,17 @@ body {
 
 .img {
 	width: 300px;
-    height: 200px;
+	height: 200px;
 	background-image: url("../img/image-product-mobile.jpg");
-    background-size: cover;
+	background-size: cover;
 }
 
 @media (min-width: 576px) {
-    .card {
-        flex-direction: row;
-    }
+	.card {
+		flex-direction: row;
+	}
 	.img {
-        height: 450px;
+		height: 450px;
 		background-image: url("../img/image-product-desktop.jpg");
 	}
 }
