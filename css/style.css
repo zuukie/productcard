@@ -16,6 +16,7 @@ body {
 
 .card {
   display: flex;
+  flex-direction: column;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -75,6 +76,19 @@ body {
   cursor: pointer;
 }
 
-img {
+.img {
   width: 300px;
+  height: 200px;
+  background-image: url("../img/image-product-mobile.jpg");
+  background-size: cover;
+}
+
+@media (min-width: 576px) {
+  .card {
+    flex-direction: row;
+  }
+  .img {
+    height: 450px;
+    background-image: url("../img/image-product-desktop.jpg");
+  }
 }/*# sourceMappingURL=style.css.map */
